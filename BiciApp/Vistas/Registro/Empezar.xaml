@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BiciApp.Vistas.Registro.Empezar">
+    <Grid BackgroundColor="#e0e1dd">
+        <StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand"
+                         Spacing="65">
+                <Label 
+                Text="BiciApp"
+                TextColor="#0d1b2a"
+                HorizontalOptions="Center"
+                FontSize="40"/>
+                <Image 
+                Source="https://i.ibb.co/1mXD2SD/bicicleta-2.png"
+                HeightRequest="150"/>
+                <Label 
+                Text="Tu App de bicicletas"
+                TextColor="#0d1b2a"
+                HorizontalOptions="Center"
+                FontSize="35"
+                HorizontalTextAlignment="Center"/>
+
+            </StackLayout>
+            <Grid VerticalOptions="EndAndExpand"
+                  Margin="20">
+                <Button 
+                    Text="Empezar"
+                    BackgroundColor="#1b263b"
+                    TextColor="#ced4da"
+                    TextTransform="None"
+                    FontAttributes="Bold"
+                    CornerRadius="10"/>
+                <Image Source="https://i.ibb.co/h1bbR9W/flecha-derecha-2.png"
+                       HeightRequest="30"
+                       HorizontalOptions="End"
+                       Margin="0,0,18,0"/>
+            </Grid>
+        </StackLayout>
+    </Grid>
+</ContentPage>

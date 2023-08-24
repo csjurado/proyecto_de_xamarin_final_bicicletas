@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BiciApp.Vistas.Registro.Crearcuenta">
+    <StackLayout Padding="20"
+                 Spacing="30">
+        <Label Text="Selecciona tu cuenta de Google"
+               FontSize="25"
+               TextColor="#0d1b2a"/>
+        <Label Text="Si continuas es oisble que reciias un SMS para verificar la cuenta. Se puede aplicar los precios de mensajes y datos."/>
+        <Frame HasShadow="False"
+               BackgroundColor="#EEEEEE"
+               CornerRadius="10"
+               Padding="15">
+            <StackLayout Orientation="Horizontal">
+                <Image Source="https://i.ibb.co/wLWzKfY/google-2.png"
+                       HeightRequest="40"/>
+                <Label Text=" Continuar con Google"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="Center"
+                       TextColor="Black"
+                       FontSize="20"/>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>

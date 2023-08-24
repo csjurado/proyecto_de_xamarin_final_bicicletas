@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "3QLXgzNInm2eMBPi8Q0SZ/sgTsyUGZh4PHJzN0AQU5pRIZnnT566YJKO8pzAc6Iu12JF1nVOAqGo1ufwbp7Kag==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Carlos Jurado\\source\\repos\\BiciApp\\BiciApp.iOS\\BiciApp.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Carlos Jurado\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Carlos Jurado\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Carlos Jurado\\.nuget\\packages\\xamarin.forms\\5.0.0.2612\\xamarin.forms.5.0.0.2612.nupkg.sha512",
+    "C:\\Users\\Carlos Jurado\\.nuget\\packages\\xamarin.forms.visual.material\\5.0.0.2612\\xamarin.forms.visual.material.5.0.0.2612.nupkg.sha512",
+    "C:\\Users\\Carlos Jurado\\.nuget\\packages\\xamarin.ios.materialcomponents\\92.0.0\\xamarin.ios.materialcomponents.92.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

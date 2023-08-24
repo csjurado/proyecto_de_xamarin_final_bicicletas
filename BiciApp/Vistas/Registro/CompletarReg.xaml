@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BiciApp.Vistas.Registro.CompletarReg"
+             Visual="Material">
+    <StackLayout BackgroundColor="White"
+                 Padding="10">
+        <Label Text="Confirma tu información"
+               FontSize="25"
+               TextColor="#0d1b2a"/>
+        <Grid ColumnDefinitions="*,*">
+            <Frame BackgroundColor="#EEEEEE"
+                   HasShadow="False"
+                   CornerRadius="10"
+                   Padding="5"
+                   Margin="0,0,20,0">
+                <Entry Placeholder="Ingresa tu nombre"
+                       Background="#EEEEEE"
+                       />
+            </Frame>
+            <Frame BackgroundColor="#EEEEEE"
+             HasShadow="False"
+             CornerRadius="10"
+             Padding="5"
+                   Grid.Column="1">
+                <Entry Placeholder="Ingresa tu apellido"
+                 Background="#EEEEEE"/>
+            </Frame>
+        </Grid>
+        <StackLayout Orientation="Horizontal"
+                     Margin="0,10,0,0">
+            <Frame BackgroundColor="#EEEEEE"
+                   CornerRadius="8"
+                   HasShadow="False">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="https://i.ibb.co/Nt2GZtn/flecha-abajo-2.png"
+                           HeightRequest="25"/>
+                </StackLayout>
+
+            </Frame>
+            <Frame HorizontalOptions="FillAndExpand"
+                   Padding="10,5"
+                   CornerRadius="8"
+                   HasShadow="False"
+                   BackgroundColor="#EEEEEE">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="+593"
+                           TextColor="Black"
+                           FontSize="20"
+                           VerticalOptions="CenterAndExpand"
+                           />
+                    <Entry BackgroundColor="#EEEEEE"
+                           Placeholder="Número de móvil"
+                           HorizontalOptions="FillAndExpand"
+                           Keyboard="Telephone">
+
+                    </Entry>
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+        <StackLayout Orientation="Horizontal"
+                     VerticalOptions="EndAndExpand">
+            <Frame BackgroundColor="#EEEEEE"
+                   CornerRadius="35"
+                   HasShadow="False"
+                   VerticalOptions="Center">
+                <Image Source="https://i.ibb.co/hRQmq2D/flecha-atras-2.png"
+                       HeightRequest="30"/>
+            </Frame>
+            <Frame HorizontalOptions="EndAndExpand"
+                   Margin="0,20"
+                   BackgroundColor="Black"
+                   CornerRadius="30"
+                   Padding="15">
+                <StackLayout Orientation="Horizontal">
+                     <Label 
+                     Text="Siguiente"
+                     BackgroundColor="Black"
+                     TextColor="#ced4da"
+                     TextTransform="None"
+                     FontSize="20"
+                     VerticalOptions="Center"
+                     FontAttributes="Bold"/>    
+                <Image Source="https://i.ibb.co/h1bbR9W/flecha-derecha-2.png"
+                       HeightRequest="30"
+                       HorizontalOptions="End"
+                       Margin="0,0,18,0"/> 
+                </StackLayout>
+              
+            </Frame>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
