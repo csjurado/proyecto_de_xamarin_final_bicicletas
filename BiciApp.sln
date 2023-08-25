@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiciApp.Android", "BiciApp.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiciApp.iOS", "BiciApp.iOS\BiciApp.iOS.csproj", "{40ACCC0B-1846-4E07-8D88-E5ED57A4A705}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiciApp", "BiciApp\BiciApp.csproj", "{BED081A0-92EB-4615-A7BB-71B906B7E409}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BiciApp", "BiciApp\BiciApp.csproj", "{BED081A0-92EB-4615-A7BB-71B906B7E409}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

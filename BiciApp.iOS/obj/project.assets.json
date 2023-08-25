@@ -2,6 +2,28 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
+      "Plugin.MaterialDesignControls/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.1874"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.MaterialDesignControls.dll": {
+            "related": ".iOS.xml;.xml"
+          },
+          "lib/Xamarin.iOS10/Plugin.MaterialDesignControls.iOS.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.MaterialDesignControls.dll": {
+            "related": ".iOS.xml;.xml"
+          },
+          "lib/Xamarin.iOS10/Plugin.MaterialDesignControls.iOS.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -9,6 +31,13 @@
         },
         "runtime": {
           "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xamarin.Build.Download/0.11.0": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Xamarin.Build.Download.props": {},
+          "buildTransitive/Xamarin.Build.Download.targets": {}
         }
       },
       "Xamarin.Essentials/1.7.0": {
@@ -171,6 +200,20 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.GoogleMaps/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Google.iOS.Maps": "6.0.1.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll": {}
+        }
+      },
       "Xamarin.Forms.Visual.Material/5.0.0.2612": {
         "type": "package",
         "dependencies": {
@@ -187,6 +230,30 @@
           }
         }
       },
+      "Xamarin.Google.iOS.Maps/6.0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.11.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "Xamarin.iOS",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/xamarinios10/Google.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Google.Maps.dll": {}
+        },
+        "build": {
+          "buildTransitive/Xamarin.Google.iOS.Maps.targets": {}
+        }
+      },
       "Xamarin.iOS.MaterialComponents/92.0.0": {
         "type": "package",
         "compile": {
@@ -200,8 +267,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Plugin.MaterialDesignControls": "3.0.0",
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2612",
+          "Xamarin.Forms.GoogleMaps": "5.0.0",
           "Xamarin.Forms.Visual.Material": "5.0.0.2612"
         },
         "compile": {
@@ -213,6 +282,28 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
+      "Plugin.MaterialDesignControls/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.1874"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.MaterialDesignControls.dll": {
+            "related": ".iOS.xml;.xml"
+          },
+          "lib/Xamarin.iOS10/Plugin.MaterialDesignControls.iOS.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.MaterialDesignControls.dll": {
+            "related": ".iOS.xml;.xml"
+          },
+          "lib/Xamarin.iOS10/Plugin.MaterialDesignControls.iOS.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -220,6 +311,13 @@
         },
         "runtime": {
           "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xamarin.Build.Download/0.11.0": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Xamarin.Build.Download.props": {},
+          "buildTransitive/Xamarin.Build.Download.targets": {}
         }
       },
       "Xamarin.Essentials/1.7.0": {
@@ -382,6 +480,20 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.GoogleMaps/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Google.iOS.Maps": "6.0.1.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll": {}
+        }
+      },
       "Xamarin.Forms.Visual.Material/5.0.0.2612": {
         "type": "package",
         "dependencies": {
@@ -398,6 +510,30 @@
           }
         }
       },
+      "Xamarin.Google.iOS.Maps/6.0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.11.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "Xamarin.iOS",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/xamarinios10/Google.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Google.Maps.dll": {}
+        },
+        "build": {
+          "buildTransitive/Xamarin.Google.iOS.Maps.targets": {}
+        }
+      },
       "Xamarin.iOS.MaterialComponents/92.0.0": {
         "type": "package",
         "compile": {
@@ -411,8 +547,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Plugin.MaterialDesignControls": "3.0.0",
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2612",
+          "Xamarin.Forms.GoogleMaps": "5.0.0",
           "Xamarin.Forms.Visual.Material": "5.0.0.2612"
         },
         "compile": {
@@ -424,6 +562,28 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-arm64": {
+      "Plugin.MaterialDesignControls/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.1874"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.MaterialDesignControls.dll": {
+            "related": ".iOS.xml;.xml"
+          },
+          "lib/Xamarin.iOS10/Plugin.MaterialDesignControls.iOS.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.MaterialDesignControls.dll": {
+            "related": ".iOS.xml;.xml"
+          },
+          "lib/Xamarin.iOS10/Plugin.MaterialDesignControls.iOS.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -431,6 +591,13 @@
         },
         "runtime": {
           "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xamarin.Build.Download/0.11.0": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Xamarin.Build.Download.props": {},
+          "buildTransitive/Xamarin.Build.Download.targets": {}
         }
       },
       "Xamarin.Essentials/1.7.0": {
@@ -593,6 +760,20 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.GoogleMaps/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Google.iOS.Maps": "6.0.1.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll": {}
+        }
+      },
       "Xamarin.Forms.Visual.Material/5.0.0.2612": {
         "type": "package",
         "dependencies": {
@@ -609,6 +790,30 @@
           }
         }
       },
+      "Xamarin.Google.iOS.Maps/6.0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.11.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "Xamarin.iOS",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/xamarinios10/Google.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Google.Maps.dll": {}
+        },
+        "build": {
+          "buildTransitive/Xamarin.Google.iOS.Maps.targets": {}
+        }
+      },
       "Xamarin.iOS.MaterialComponents/92.0.0": {
         "type": "package",
         "compile": {
@@ -622,8 +827,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Plugin.MaterialDesignControls": "3.0.0",
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2612",
+          "Xamarin.Forms.GoogleMaps": "5.0.0",
           "Xamarin.Forms.Visual.Material": "5.0.0.2612"
         },
         "compile": {
@@ -635,6 +842,28 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
+      "Plugin.MaterialDesignControls/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.1874"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.MaterialDesignControls.dll": {
+            "related": ".iOS.xml;.xml"
+          },
+          "lib/Xamarin.iOS10/Plugin.MaterialDesignControls.iOS.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.MaterialDesignControls.dll": {
+            "related": ".iOS.xml;.xml"
+          },
+          "lib/Xamarin.iOS10/Plugin.MaterialDesignControls.iOS.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -642,6 +871,13 @@
         },
         "runtime": {
           "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xamarin.Build.Download/0.11.0": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Xamarin.Build.Download.props": {},
+          "buildTransitive/Xamarin.Build.Download.targets": {}
         }
       },
       "Xamarin.Essentials/1.7.0": {
@@ -804,6 +1040,20 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.GoogleMaps/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Google.iOS.Maps": "6.0.1.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll": {}
+        }
+      },
       "Xamarin.Forms.Visual.Material/5.0.0.2612": {
         "type": "package",
         "dependencies": {
@@ -820,6 +1070,30 @@
           }
         }
       },
+      "Xamarin.Google.iOS.Maps/6.0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.11.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "Xamarin.iOS",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/xamarinios10/Google.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Google.Maps.dll": {}
+        },
+        "build": {
+          "buildTransitive/Xamarin.Google.iOS.Maps.targets": {}
+        }
+      },
       "Xamarin.iOS.MaterialComponents/92.0.0": {
         "type": "package",
         "compile": {
@@ -833,8 +1107,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Plugin.MaterialDesignControls": "3.0.0",
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2612",
+          "Xamarin.Forms.GoogleMaps": "5.0.0",
           "Xamarin.Forms.Visual.Material": "5.0.0.2612"
         },
         "compile": {
@@ -846,6 +1122,28 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
+      "Plugin.MaterialDesignControls/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.1874"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.MaterialDesignControls.dll": {
+            "related": ".iOS.xml;.xml"
+          },
+          "lib/Xamarin.iOS10/Plugin.MaterialDesignControls.iOS.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.MaterialDesignControls.dll": {
+            "related": ".iOS.xml;.xml"
+          },
+          "lib/Xamarin.iOS10/Plugin.MaterialDesignControls.iOS.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -853,6 +1151,13 @@
         },
         "runtime": {
           "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xamarin.Build.Download/0.11.0": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Xamarin.Build.Download.props": {},
+          "buildTransitive/Xamarin.Build.Download.targets": {}
         }
       },
       "Xamarin.Essentials/1.7.0": {
@@ -1015,6 +1320,20 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.GoogleMaps/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Google.iOS.Maps": "6.0.1.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll": {}
+        }
+      },
       "Xamarin.Forms.Visual.Material/5.0.0.2612": {
         "type": "package",
         "dependencies": {
@@ -1031,6 +1350,30 @@
           }
         }
       },
+      "Xamarin.Google.iOS.Maps/6.0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.11.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "Xamarin.iOS",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/xamarinios10/Google.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Google.Maps.dll": {}
+        },
+        "build": {
+          "buildTransitive/Xamarin.Google.iOS.Maps.targets": {}
+        }
+      },
       "Xamarin.iOS.MaterialComponents/92.0.0": {
         "type": "package",
         "compile": {
@@ -1044,8 +1387,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Plugin.MaterialDesignControls": "3.0.0",
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2612",
+          "Xamarin.Forms.GoogleMaps": "5.0.0",
           "Xamarin.Forms.Visual.Material": "5.0.0.2612"
         },
         "compile": {
@@ -1058,6 +1403,28 @@
     }
   },
   "libraries": {
+    "Plugin.MaterialDesignControls/3.0.0": {
+      "sha512": "NMdujQTORN0SBrz5TrtpFd5HywIUb/k0ljsiECrU9bpEToIPXPU37D0z6XbXAUbLDdsIhbBpr2UMVumkEAdT9A==",
+      "type": "package",
+      "path": "plugin.materialdesigncontrols/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/MonoAndroid10/Plugin.MaterialDesignControls.Android.dll",
+        "lib/MonoAndroid10/Plugin.MaterialDesignControls.Android.xml",
+        "lib/MonoAndroid10/Plugin.MaterialDesignControls.dll",
+        "lib/MonoAndroid10/Plugin.MaterialDesignControls.xml",
+        "lib/Xamarin.iOS10/Plugin.MaterialDesignControls.dll",
+        "lib/Xamarin.iOS10/Plugin.MaterialDesignControls.iOS.dll",
+        "lib/Xamarin.iOS10/Plugin.MaterialDesignControls.iOS.xml",
+        "lib/Xamarin.iOS10/Plugin.MaterialDesignControls.xml",
+        "lib/netstandard1.0/Plugin.MaterialDesignControls.dll",
+        "lib/netstandard1.0/Plugin.MaterialDesignControls.xml",
+        "plugin.materialdesigncontrols.3.0.0.nupkg.sha512",
+        "plugin.materialdesigncontrols.nuspec"
+      ]
+    },
     "System.Numerics.Vectors/4.5.0": {
       "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
       "type": "package",
@@ -1103,6 +1470,28 @@
         "system.numerics.vectors.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Xamarin.Build.Download/0.11.0": {
+      "sha512": "35/X1Lz4KNoD0VjmDRO/Ap8U823odTUVWGnAmdoweFvjbE3CJ+B8zzOAp+MzvheuEBYlGfX5P4gjvLRZhVTCDg==",
+      "type": "package",
+      "path": "xamarin.build.download/0.11.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICE.txt",
+        "build/Microsoft.Win32.Registry.dll",
+        "build/Newtonsoft.Json.dll",
+        "build/Xamarin.Build.Download.dll",
+        "build/Xamarin.Build.Download.props",
+        "build/Xamarin.Build.Download.targets",
+        "buildTransitive/Microsoft.Win32.Registry.dll",
+        "buildTransitive/Newtonsoft.Json.dll",
+        "buildTransitive/Xamarin.Build.Download.dll",
+        "buildTransitive/Xamarin.Build.Download.props",
+        "buildTransitive/Xamarin.Build.Download.targets",
+        "xamarin.build.download.0.11.0.nupkg.sha512",
+        "xamarin.build.download.nuspec"
       ]
     },
     "Xamarin.Essentials/1.7.0": {
@@ -1365,6 +1754,23 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Xamarin.Forms.GoogleMaps/5.0.0": {
+      "sha512": "+1QJx2C7Sa87rPnTsAHnmRc0q4RunQMGc5/P3emIyNunM/qXUC9sTn+s/vJEUpvheXf8STBR51xctRAdNM9rFA==",
+      "type": "package",
+      "path": "xamarin.forms.googlemaps/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/MonoAndroid10.0/Xamarin.Forms.GoogleMaps.Android.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.GoogleMaps.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll",
+        "lib/netstandard2.0/Xamarin.Forms.GoogleMaps.dll",
+        "xamarin.forms.googlemaps.5.0.0.nupkg.sha512",
+        "xamarin.forms.googlemaps.nuspec"
+      ]
+    },
     "Xamarin.Forms.Visual.Material/5.0.0.2612": {
       "sha512": "2HRX34yb0YySc8WRgSRp2jjXQBtgWoXMLG43i1SY0YmwiQ8ZD3r0+XMNUQ7bgW0QHpGRTuFvQQdF3j7owCSmkQ==",
       "type": "package",
@@ -1389,6 +1795,23 @@
         "xamarin.forms.visual.material.nuspec"
       ]
     },
+    "Xamarin.Google.iOS.Maps/6.0.1.1": {
+      "sha512": "Rbujx2MO4XdsJ+UOJwvGpGbwI//6ZZcsVdiVqClq+zSOHjilQC+XWR4KM7RyKeSHU94vOmaoFtmeSmRyt52wsQ==",
+      "type": "package",
+      "path": "xamarin.google.ios.maps/6.0.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.md",
+        "build/Xamarin.Google.iOS.Maps.targets",
+        "buildTransitive/Xamarin.Google.iOS.Maps.targets",
+        "googleiosmaps_128x128.png",
+        "lib/net6.0-ios15.4/Google.Maps.dll",
+        "lib/xamarinios10/Google.Maps.dll",
+        "xamarin.google.ios.maps.6.0.1.1.nupkg.sha512",
+        "xamarin.google.ios.maps.nuspec"
+      ]
+    },
     "Xamarin.iOS.MaterialComponents/92.0.0": {
       "sha512": "I0mVxJBHsaR2NtFbZmafSLmIB4FUOSfSOf1SW3i2UA0TyoWr+F0AdrLtPRQtXq97LUg0fEnWhaq+4suVxbDbFw==",
       "type": "package",
@@ -1411,8 +1834,10 @@
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
       "BiciApp >= 1.0.0",
+      "Plugin.MaterialDesignControls >= 3.0.0",
       "Xamarin.Essentials >= 1.7.0",
       "Xamarin.Forms >= 5.0.0.2612",
+      "Xamarin.Forms.GoogleMaps >= 5.0.0",
       "Xamarin.Forms.Visual.Material >= 5.0.0.2612"
     ]
   },
@@ -1458,6 +1883,10 @@
     "frameworks": {
       "xamarinios10": {
         "dependencies": {
+          "Plugin.MaterialDesignControls": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.7.0, )"
@@ -1465,6 +1894,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[5.0.0.2612, )"
+          },
+          "Xamarin.Forms.GoogleMaps": {
+            "target": "Package",
+            "version": "[5.0.0, )"
           },
           "Xamarin.Forms.Visual.Material": {
             "target": "Package",

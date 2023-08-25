@@ -10,7 +10,9 @@
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-  <application android:label="BiciApp.Android" android:theme="@style/MainTheme" android:icon="@mipmap/iconbike" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true" android:extractNativeLibs="true">
+  <application android:label="BiciApp.Android" android:theme="@style/MainTheme" android:icon="@mipmap/iconbike" android:debuggable="true" android:name="crc64d8206b63bd45f804.Googlemapsapi" android:allowBackup="true" android:extractNativeLibs="true">
+    <meta-data android:name="com.google.android.maps.v2.APY_KEY" android:value="AIzaSyAxirVd6w790mP2FW09QBeu6kGNhiLE7Gw" />
+    <uses-library android:name="org.apache.http.legacy" android:required="false" />
     <activity android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/icon" android:label="BiciApp" android:theme="@style/MainTheme" android:name="crc644baef7a89f9b1795.MainActivity" />
     <activity android:configChanges="screenSize" android:icon="@mipmap/icoonbike" android:label="BiciApp" android:theme="@style/nuevotema" android:name="crc644baef7a89f9b1795.SplashScreen" android:exported="true">
       <intent-filter>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BiciApp.Vistas.Registro.Digitarcodigo"
+             xmlns:material="clr-namespace:Plugin.MaterialDesignControls;assembly=Plugin.MaterialDesignControls">
+    <StackLayout
+        Padding="20"
+        BackgroundColor="White"
+        Spacing="20">
+        <Label Text="Ingresa el código de 4 dígitos que se te envió al 98543534"
+               FontSize="Medium"
+               TextColor="Black"/>
+        <Grid ColumnDefinitions="*,*">
+            <material:MaterialCodeEntry Length="4"
+                                        Keyboard="Numeric"
+                                        FontSize="20"
+                                        Background="#F6F6F6"
+                                        BorderColor="#F6F6F6"/>
+        </Grid>
+        <Frame CornerRadius="30"
+               HorizontalOptions="Start"
+               Padding="20,8"
+               HasShadow="False"
+               BackgroundColor="#F6F6F6">
+            <Label Text="No recibí el código 0:30"/>
+
+        </Frame>
+        <StackLayout Orientation="Horizontal"
+                     VerticalOptions="EndAndExpand">
+            <Frame BackgroundColor="#EEEEEE"
+                   CornerRadius="35"
+                   HasShadow="False"
+                   VerticalOptions="Center">
+                <Image Source="https://i.ibb.co/hRQmq2D/flecha-atras-2.png"
+                       HeightRequest="30"/>
+            </Frame>
+            <Frame HorizontalOptions="EndAndExpand"
+                   Margin="0,20"
+                   BackgroundColor="Black"
+                   CornerRadius="30"
+                   Padding="15">
+                <StackLayout Orientation="Horizontal">
+                    <Label 
+                     Text="Siguiente"
+                     BackgroundColor="Black"
+                     TextColor="#ced4da"
+                     TextTransform="None"
+                     FontSize="20"
+                     VerticalOptions="Center"
+                     FontAttributes="Bold"/>
+                    <Image Source="https://i.ibb.co/h1bbR9W/flecha-derecha-2.png"
+                       HeightRequest="30"
+                       HorizontalOptions="End"
+                       Margin="0,0,8,0"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

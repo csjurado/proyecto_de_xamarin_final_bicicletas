@@ -26,6 +26,22 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "Plugin.MaterialDesignControls/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.1874"
+        },
+        "compile": {
+          "lib/netstandard1.0/Plugin.MaterialDesignControls.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/Plugin.MaterialDesignControls.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -78,6 +94,18 @@
         "build": {
           "buildTransitive/Xamarin.Forms.props": {},
           "buildTransitive/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.GoogleMaps/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.GoogleMaps.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.GoogleMaps.dll": {}
         }
       },
       "Xamarin.Forms.Visual.Material/5.0.0.2612": {
@@ -237,6 +265,28 @@
         "lib/netstandard1.0/_._",
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
+      ]
+    },
+    "Plugin.MaterialDesignControls/3.0.0": {
+      "sha512": "NMdujQTORN0SBrz5TrtpFd5HywIUb/k0ljsiECrU9bpEToIPXPU37D0z6XbXAUbLDdsIhbBpr2UMVumkEAdT9A==",
+      "type": "package",
+      "path": "plugin.materialdesigncontrols/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/MonoAndroid10/Plugin.MaterialDesignControls.Android.dll",
+        "lib/MonoAndroid10/Plugin.MaterialDesignControls.Android.xml",
+        "lib/MonoAndroid10/Plugin.MaterialDesignControls.dll",
+        "lib/MonoAndroid10/Plugin.MaterialDesignControls.xml",
+        "lib/Xamarin.iOS10/Plugin.MaterialDesignControls.dll",
+        "lib/Xamarin.iOS10/Plugin.MaterialDesignControls.iOS.dll",
+        "lib/Xamarin.iOS10/Plugin.MaterialDesignControls.iOS.xml",
+        "lib/Xamarin.iOS10/Plugin.MaterialDesignControls.xml",
+        "lib/netstandard1.0/Plugin.MaterialDesignControls.dll",
+        "lib/netstandard1.0/Plugin.MaterialDesignControls.xml",
+        "plugin.materialdesigncontrols.3.0.0.nupkg.sha512",
+        "plugin.materialdesigncontrols.nuspec"
       ]
     },
     "System.Numerics.Vectors/4.5.0": {
@@ -546,6 +596,23 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Xamarin.Forms.GoogleMaps/5.0.0": {
+      "sha512": "+1QJx2C7Sa87rPnTsAHnmRc0q4RunQMGc5/P3emIyNunM/qXUC9sTn+s/vJEUpvheXf8STBR51xctRAdNM9rFA==",
+      "type": "package",
+      "path": "xamarin.forms.googlemaps/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/MonoAndroid10.0/Xamarin.Forms.GoogleMaps.Android.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.GoogleMaps.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll",
+        "lib/netstandard2.0/Xamarin.Forms.GoogleMaps.dll",
+        "xamarin.forms.googlemaps.5.0.0.nupkg.sha512",
+        "xamarin.forms.googlemaps.nuspec"
+      ]
+    },
     "Xamarin.Forms.Visual.Material/5.0.0.2612": {
       "sha512": "2HRX34yb0YySc8WRgSRp2jjXQBtgWoXMLG43i1SY0YmwiQ8ZD3r0+XMNUQ7bgW0QHpGRTuFvQQdF3j7owCSmkQ==",
       "type": "package",
@@ -574,8 +641,10 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
+      "Plugin.MaterialDesignControls >= 3.0.0",
       "Xamarin.Essentials >= 1.7.0",
       "Xamarin.Forms >= 5.0.0.2612",
+      "Xamarin.Forms.GoogleMaps >= 5.0.0",
       "Xamarin.Forms.Visual.Material >= 5.0.0.2612"
     ]
   },
@@ -630,6 +699,10 @@
             "version": "[2.0.3, )",
             "autoReferenced": true
           },
+          "Plugin.MaterialDesignControls": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.7.0, )"
@@ -637,6 +710,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[5.0.0.2612, )"
+          },
+          "Xamarin.Forms.GoogleMaps": {
+            "target": "Package",
+            "version": "[5.0.0, )"
           },
           "Xamarin.Forms.Visual.Material": {
             "target": "Package",

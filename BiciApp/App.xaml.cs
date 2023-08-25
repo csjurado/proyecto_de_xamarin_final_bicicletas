@@ -2,6 +2,8 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using BiciApp.Vistas.Registro;
+using BiciApp.Vistas.Menuprincipal;
+
 
 namespace BiciApp
 {
@@ -11,7 +13,7 @@ namespace BiciApp
         {
             InitializeComponent();
 
-            MainPage = new CompletarReg();
+            MainPage = new Vmenuprincipal();
         }
 
         protected override void OnStart()
