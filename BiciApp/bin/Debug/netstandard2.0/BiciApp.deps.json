@@ -11,7 +11,7 @@
         "dependencies": {
           "NETStandard.Library": "2.0.3",
           "Plugin.MaterialDesignControls": "3.0.0",
-          "Xamarin.Essentials": "1.7.0",
+          "Xamarin.Essentials": "1.8.0",
           "Xamarin.Forms": "5.0.0.2612",
           "Xamarin.Forms.GoogleMaps": "5.0.0",
           "Xamarin.Forms.Visual.Material": "5.0.0.2612"
@@ -45,7 +45,7 @@
           }
         }
       },
-      "Xamarin.Essentials/1.7.0": {
+      "Xamarin.Essentials/1.8.0": {
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
         },
@@ -124,12 +124,12 @@
       "path": "system.numerics.vectors/4.5.0",
       "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
     },
-    "Xamarin.Essentials/1.7.0": {
+    "Xamarin.Essentials/1.8.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-xfUJNxtfMC05VBej7fVUg6Zd9VwM2kqW9LH0tcrSA6IsBTl0EsIGkYUOz1BoKT2rseWW8o3kTi5WH/yZV4GgJw==",
-      "path": "xamarin.essentials/1.7.0",
-      "hashPath": "xamarin.essentials.1.7.0.nupkg.sha512"
+      "sha512": "sha512-g1yB0CkX7BVOx84P0SLm8guypbEfigqjddZsI9KgJzba6yRRcekBqDp6YTT1hO8ZcFcW8VZbsymejTJftJoQyg==",
+      "path": "xamarin.essentials/1.8.0",
+      "hashPath": "xamarin.essentials.1.8.0.nupkg.sha512"
     },
     "Xamarin.Forms/5.0.0.2612": {
       "type": "package",

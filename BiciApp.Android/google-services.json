@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "272144100514",
+    "project_id": "biciapp-proyecto",
+    "storage_bucket": "biciapp-proyecto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272144100514:android:2b8ecaaeed63742d237bfb",
+        "android_client_info": {
+          "package_name": "com.csjurado.biciapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "272144100514-gi1qiukqcs0om83a5h4asd81m6tavigi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.csjurado.biciapp",
+            "certificate_hash": "429416184928ec6749be1daa79cd95546685d384"
+          }
+        },
+        {
+          "client_id": "272144100514-54agssqc3n2kjmeq575h71nhe21okpq1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNwJ1TYrF56yv7X-WRFpvX82sIeRf8hGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "272144100514-54agssqc3n2kjmeq575h71nhe21okpq1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

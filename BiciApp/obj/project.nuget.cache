@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Rb/25WUxUi9J0+d/YA2GaeVQD/DG5x3m+g1s3o/7elOz+mBq4iW+AAgBr1trFaOIaTVfwLETvRarqMvIA6ODbA==",
+  "dgSpecHash": "B/NhDp50FmqVT4RhE6eDyx7ujp25NRfM8qlvfamWzhuNo6wUMvMK71Jj0SyuM4gNIPYmwURSYfw0+y8cRSEB2w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Carlos Jurado\\source\\repos\\BiciApp\\BiciApp\\BiciApp.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,7 @@
     "C:\\Users\\Carlos Jurado\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\Carlos Jurado\\.nuget\\packages\\plugin.materialdesigncontrols\\3.0.0\\plugin.materialdesigncontrols.3.0.0.nupkg.sha512",
     "C:\\Users\\Carlos Jurado\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\Carlos Jurado\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Carlos Jurado\\.nuget\\packages\\xamarin.essentials\\1.8.0\\xamarin.essentials.1.8.0.nupkg.sha512",
     "C:\\Users\\Carlos Jurado\\.nuget\\packages\\xamarin.forms\\5.0.0.2612\\xamarin.forms.5.0.0.2612.nupkg.sha512",
     "C:\\Users\\Carlos Jurado\\.nuget\\packages\\xamarin.forms.googlemaps\\5.0.0\\xamarin.forms.googlemaps.5.0.0.nupkg.sha512",
     "C:\\Users\\Carlos Jurado\\.nuget\\packages\\xamarin.forms.visual.material\\5.0.0.2612\\xamarin.forms.visual.material.5.0.0.2612.nupkg.sha512"

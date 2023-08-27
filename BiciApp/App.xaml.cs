@@ -13,6 +13,7 @@ namespace BiciApp
         {
             InitializeComponent();
 
+            //MainPage = new NavigationPage( new Empezar());
             MainPage = new Vmenuprincipal();
         }
 

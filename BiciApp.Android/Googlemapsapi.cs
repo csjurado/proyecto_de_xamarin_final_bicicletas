@@ -1,29 +1,27 @@
 ﻿#if DEBUG
+using System;
 using Android.App;
 using Android.Runtime;
-using BiciApp.Conexiones;
 using Plugin.CurrentActivity;
-using System;
-
+using BiciApp.Conexiones;
 [Application(Debuggable = true)]
 
 #else
-
-using System;
 using Android.App;
 using Android.Runtime;
 using Plugin.CurrentActivity;
+using System;
 [Application(Debuggable = false)]
 #endif
-[MetaData("com.google.android.maps.v2.APY_KEY",
+[MetaData("com.google.android.maps.APY_KEY",
     Value = Constantes.GoogleMapsApiKey)]
-public class Googlemapsapi: Application
+public class Googlemapsapi : Application
 {
-    public Googlemapsapi(IntPtr handle, JniHandleOwnership transfer)
-     : base(handle, transfer)
-        {
+    public Googlemapsapi(IntPtr handle, JniHandleOwnership transer)
+     : base(handle, transer)
+    {
 
-        }
+    }
     public override void OnCreate()
     {
         base.OnCreate();
