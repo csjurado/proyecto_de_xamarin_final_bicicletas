@@ -3,7 +3,8 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using BiciApp.Vistas.Registro;
 using BiciApp.Vistas.Menuprincipal;
-
+using BiciApp.Vistas.Reutilizable;
+using BiciApp.Vistas.Navegacion;
 
 namespace BiciApp
 {
@@ -13,8 +14,8 @@ namespace BiciApp
         {
             InitializeComponent();
 
-            //MainPage = new NavigationPage( new Empezar());
-            MainPage = new Vmenuprincipal();
+            MainPage = new NavigationPage(new Adondevamos());
+            //MainPage = new Empezar();
         }
 
         protected override void OnStart()

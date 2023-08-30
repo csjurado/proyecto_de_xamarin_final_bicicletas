@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BiciApp.Vistas.Registro.CompletarReg"
+             xmlns:svg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
              Visual="Material">
     <StackLayout BackgroundColor="White"
                  Padding="10">
@@ -34,8 +35,15 @@
                    CornerRadius="8"
                    HasShadow="False">
                 <StackLayout Orientation="Horizontal">
+                    <svg:SvgCachedImage Source="{Binding SelectPaisDefault.Iconourl}"
+                                        HeightRequest="26"
+                                        WidthRequest="26"
+                                        Margin="5"/>
                     <Image Source="https://i.ibb.co/Nt2GZtn/flecha-abajo-2.png"
                            HeightRequest="25"/>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding Irpaisescommand}"/>
+                    </StackLayout.GestureRecognizers>
                 </StackLayout>
 
             </Frame>
@@ -45,7 +53,7 @@
                    HasShadow="False"
                    BackgroundColor="#EEEEEE">
                 <StackLayout Orientation="Horizontal">
-                    <Label Text="+593"
+                    <Label Text="{Binding SelectPaisDefault.Codigopais,StringFormat='+{0}'}"
                            TextColor="Black"
                            FontSize="20"
                            VerticalOptions="CenterAndExpand"
@@ -53,9 +61,8 @@
                     <Entry BackgroundColor="#EEEEEE"
                            Placeholder="Número de móvil"
                            HorizontalOptions="FillAndExpand"
-                           Keyboard="Telephone">
-
-                    </Entry>
+                           Keyboard="Telephone"
+                           Text="{Binding Txtnumero}"/>
                 </StackLayout>
             </Frame>
 
@@ -86,7 +93,10 @@
                 <Image Source="https://i.ibb.co/h1bbR9W/flecha-derecha-2.png"
                        HeightRequest="30"
                        HorizontalOptions="End"
-                       Margin="0,0,18,0"/> 
+                       Margin="0,0,18,0"/>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding Siguientecommand}"/>
+                    </StackLayout.GestureRecognizers>
                 </StackLayout>
               
             </Frame>

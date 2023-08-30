@@ -5,6 +5,12 @@ C:\Users\Carlos Jurado\source\repos\BiciApp\BiciApp\bin\Debug\netstandard2.0\Bic
 C:\Users\Carlos Jurado\source\repos\BiciApp\BiciApp\obj\Debug\netstandard2.0\BiciApp.csproj.AssemblyReference.cache
 C:\Users\Carlos Jurado\source\repos\BiciApp\BiciApp\obj\Debug\netstandard2.0\BiciApp.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Carlos Jurado\source\repos\BiciApp\BiciApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Carlos Jurado\source\repos\BiciApp\BiciApp\obj\Debug\netstandard2.0\Vistas\Menuprincipal\Vmenuprincipal.xaml.g.cs
+C:\Users\Carlos Jurado\source\repos\BiciApp\BiciApp\obj\Debug\netstandard2.0\Vistas\Registro\CompletarReg.xaml.g.cs
+C:\Users\Carlos Jurado\source\repos\BiciApp\BiciApp\obj\Debug\netstandard2.0\Vistas\Registro\Crearcuenta.xaml.g.cs
+C:\Users\Carlos Jurado\source\repos\BiciApp\BiciApp\obj\Debug\netstandard2.0\Vistas\Registro\Digitarcodigo.xaml.g.cs
+C:\Users\Carlos Jurado\source\repos\BiciApp\BiciApp\obj\Debug\netstandard2.0\Vistas\Registro\Empezar.xaml.g.cs
+C:\Users\Carlos Jurado\source\repos\BiciApp\BiciApp\obj\Debug\netstandard2.0\Vistas\Reutilizable\Listapaises.xaml.g.cs
 C:\Users\Carlos Jurado\source\repos\BiciApp\BiciApp\obj\Debug\netstandard2.0\BiciApp.AssemblyInfoInputs.cache
 C:\Users\Carlos Jurado\source\repos\BiciApp\BiciApp\obj\Debug\netstandard2.0\BiciApp.AssemblyInfo.cs
 C:\Users\Carlos Jurado\source\repos\BiciApp\BiciApp\obj\Debug\netstandard2.0\BiciApp.csproj.CoreCompileInputs.cache
@@ -12,8 +18,5 @@ C:\Users\Carlos Jurado\source\repos\BiciApp\BiciApp\obj\Debug\netstandard2.0\Xam
 C:\Users\Carlos Jurado\source\repos\BiciApp\BiciApp\obj\Debug\netstandard2.0\BiciApp.dll
 C:\Users\Carlos Jurado\source\repos\BiciApp\BiciApp\obj\Debug\netstandard2.0\refint\BiciApp.dll
 C:\Users\Carlos Jurado\source\repos\BiciApp\BiciApp\obj\Debug\netstandard2.0\BiciApp.pdb
-C:\Users\Carlos Jurado\source\repos\BiciApp\BiciApp\obj\Debug\netstandard2.0\Vistas\Registro\Empezar.xaml.g.cs
-C:\Users\Carlos Jurado\source\repos\BiciApp\BiciApp\obj\Debug\netstandard2.0\Vistas\Registro\Crearcuenta.xaml.g.cs
-C:\Users\Carlos Jurado\source\repos\BiciApp\BiciApp\obj\Debug\netstandard2.0\Vistas\Registro\CompletarReg.xaml.g.cs
-C:\Users\Carlos Jurado\source\repos\BiciApp\BiciApp\obj\Debug\netstandard2.0\Vistas\Registro\Digitarcodigo.xaml.g.cs
-C:\Users\Carlos Jurado\source\repos\BiciApp\BiciApp\obj\Debug\netstandard2.0\Vistas\Menuprincipal\Vmenuprincipal.xaml.g.cs
+C:\Users\Carlos Jurado\source\repos\BiciApp\BiciApp\obj\Debug\netstandard2.0\Vistas\Navegacion\Adondevamos.xaml.g.cs
+C:\Users\Carlos Jurado\source\repos\BiciApp\BiciApp\obj\Debug\netstandard2.0\Vistas\Reutilizable\Listadirecciones.xaml.g.cs

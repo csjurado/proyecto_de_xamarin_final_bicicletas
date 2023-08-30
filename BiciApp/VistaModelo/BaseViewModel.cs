@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using System.Runtime.CompilerServices;
 using System.ComponentModel;
+using System.Linq;
+
 namespace BiciApp.VistaModelo
 {
     public class BaseViewModel : INotifyPropertyChanged
@@ -89,6 +91,19 @@ namespace BiciApp.VistaModelo
             backingFieled = value;
 
             OnPropertyChanged(propertyName);
+        }
+        public string PrimerletraMayus(string objeto)
+        {
+            try
+            {
+                string input = objeto.ToString().ToLower()??throw new Exception();
+                return input.First().ToString().ToUpper()+input.Substring(1);
+            }
+            catch (Exception)
+            {
+                return string.Empty;
+                throw;
+            }
         }
     }
 }

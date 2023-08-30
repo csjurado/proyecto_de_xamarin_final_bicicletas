@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BiciApp.VistaModelo;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace BiciApp.Vistas.Menuprincipal
 		public Vmenuprincipal ()
 		{
 			InitializeComponent ();
+			BindingContext = new VMmenuprincipal(Navigation);
 		}
 	}
 }

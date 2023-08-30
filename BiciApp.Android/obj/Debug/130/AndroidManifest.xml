@@ -9,16 +9,16 @@
   <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="33" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-  <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
-  <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
-  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
   <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
   <uses-permission android:name="android.permission.INTERNET" />
   <application android:label="BiciApp.Android" android:theme="@style/MainTheme" android:icon="@mipmap/iconbike" android:debuggable="true" android:name="crc64d8206b63bd45f804.Googlemapsapi" android:allowBackup="true" android:extractNativeLibs="true">
-    <!--<uses-library android:name="org.apache.http.legacy" android:required="false"/>
-		<meta-data android:name="com.google.android.maps.APY_KEY" android:value="AIzaSyAxirVd6w790mP2FW09QBeu6kGNhiLE7Gw"/>-->
-    <meta-data android:name="com.google.android.maps.APY_KEY" android:value="AIzaSyAxirVd6w790mP2FW09QBeu6kGNhiLE7Gw" />
+    <!--<uses-library android:name="org.apache.http.legacy" android:required="true"/>
+		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAxirVd6w790mP2FW09QBeu6kGNhiLE7Gw" />-->
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAxirVd6w790mP2FW09QBeu6kGNhiLE7Gw" />
     <uses-library android:name="org.apache.http.legacy" android:required="false" />
     <activity android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/icon" android:label="BiciApp" android:theme="@style/MainTheme" android:name="crc644baef7a89f9b1795.MainActivity" />
     <activity android:configChanges="screenSize" android:icon="@mipmap/icoonbike" android:label="BiciApp" android:theme="@style/nuevotema" android:name="crc644baef7a89f9b1795.SplashScreen" android:exported="true">

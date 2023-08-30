@@ -1,6 +1,13 @@
+FFImageLoading.Forms.Platform.dll
+FFImageLoading.Platform.dll
+FFImageLoading.Svg.Forms.dll
+FFImageLoading.Svg.Platform.dll
 FormsViewGroup.dll
 Plugin.CurrentActivity.dll
 Plugin.MaterialDesignControls.Android.dll
+Rg.Plugins.Popup.dll
+Sharpnado.Shadows.Android.dll
+SkiaSharp.dll
 Xamarin.AndroidX.Activity.dll
 Xamarin.AndroidX.Annotation.dll
 Xamarin.AndroidX.Annotation.Experimental.dll
@@ -61,6 +68,7 @@ Xamarin.AndroidX.VectorDrawable.dll
 Xamarin.AndroidX.VersionedParcelable.dll
 Xamarin.AndroidX.ViewPager.dll
 Xamarin.AndroidX.ViewPager2.dll
+Xamarin.CommunityToolkit.dll
 Xamarin.Essentials.dll
 Xamarin.Firebase.Annotations.dll
 Xamarin.Firebase.AppCheck.Interop.dll

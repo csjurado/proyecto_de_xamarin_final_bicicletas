@@ -9,10 +9,10 @@
   <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="33" tools:overrideLibrary="com.google.android.recaptcha" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-  <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
-  <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
-  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
   <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
   <uses-permission android:name="android.permission.INTERNET" />
   <permission android:name="com.csjurado.biciapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature" />
@@ -28,10 +28,10 @@
   <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
   <application android:name="crc64d8206b63bd45f804.Googlemapsapi" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@mipmap/iconbike" android:label="BiciApp.Android" android:theme="@style/MainTheme">
     <!--
-        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
-		<meta-data android:name="com.google.android.maps.APY_KEY" android:value="AIzaSyAxirVd6w790mP2FW09QBeu6kGNhiLE7Gw"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="true"/>
+		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAxirVd6w790mP2FW09QBeu6kGNhiLE7Gw" />
         -->
-    <meta-data android:name="com.google.android.maps.APY_KEY" android:value="AIzaSyAxirVd6w790mP2FW09QBeu6kGNhiLE7Gw" />
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAxirVd6w790mP2FW09QBeu6kGNhiLE7Gw" />
     <uses-library android:name="org.apache.http.legacy" android:required="false" />
     <activity android:name="crc644baef7a89f9b1795.MainActivity" android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/icon" android:label="BiciApp" android:theme="@style/MainTheme" />
     <activity android:name="crc644baef7a89f9b1795.SplashScreen" android:configChanges="screenSize" android:exported="true" android:icon="@mipmap/icoonbike" android:label="BiciApp" android:theme="@style/nuevotema">
@@ -52,10 +52,24 @@
     <receiver android:name="crc643f46942d9dd1fff9.PowerSaveModeBroadcastReceiver" android:enabled="true" android:exported="false" />
     <provider android:name="mono.MonoRuntimeProvider" android:authorities="com.csjurado.biciapp.mono.MonoRuntimeProvider.__mono_init__" android:exported="false" android:initOrder="1999999999" />
     <provider android:name="androidx.startup.InitializationProvider" android:authorities="com.csjurado.biciapp.androidx-startup" android:exported="false" tools:node="merge">
+      <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup" />
       <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup" />
       <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup" />
-      <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup" />
     </provider>
+    <receiver android:name="androidx.profileinstaller.ProfileInstallReceiver" android:directBootAware="false" android:enabled="true" android:exported="true" android:permission="android.permission.DUMP">
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+      </intent-filter>
+    </receiver>
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
     <activity android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
     <activity android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:excludeFromRecents="true" android:exported="false" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
@@ -84,19 +98,5 @@
         <data android:host="firebase.auth" android:path="/" android:scheme="recaptcha" />
       </intent-filter>
     </activity>
-    <receiver android:name="androidx.profileinstaller.ProfileInstallReceiver" android:directBootAware="false" android:enabled="true" android:exported="true" android:permission="android.permission.DUMP">
-      <intent-filter>
-        <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-      </intent-filter>
-      <intent-filter>
-        <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-      </intent-filter>
-      <intent-filter>
-        <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-      </intent-filter>
-      <intent-filter>
-        <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-      </intent-filter>
-    </receiver>
   </application>
 </manifest>

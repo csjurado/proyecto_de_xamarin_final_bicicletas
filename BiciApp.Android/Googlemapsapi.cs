@@ -1,11 +1,13 @@
 ﻿#if DEBUG
 using System;
+
 using Android.App;
 using Android.Runtime;
+
 using Plugin.CurrentActivity;
+
 using BiciApp.Conexiones;
 [Application(Debuggable = true)]
-
 #else
 using Android.App;
 using Android.Runtime;
@@ -13,12 +15,13 @@ using Plugin.CurrentActivity;
 using System;
 [Application(Debuggable = false)]
 #endif
-[MetaData("com.google.android.maps.APY_KEY",
+[MetaData("com.google.android.maps.v2.API_KEY",
     Value = Constantes.GoogleMapsApiKey)]
+
 public class Googlemapsapi : Application
 {
     public Googlemapsapi(IntPtr handle, JniHandleOwnership transer)
-     : base(handle, transer)
+       : base(handle, transer)
     {
 
     }
@@ -27,4 +30,5 @@ public class Googlemapsapi : Application
         base.OnCreate();
         CrossCurrentActivity.Current.Init(this);
     }
+
 }
